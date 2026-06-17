@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "offshore": {
+      "command": "node",
+      "args": ["./dist/index.js"],
+      "env": {
+        "OFFSHORE_PROVIDER": "ollama",
+        "OFFSHORE_MODEL": "dolphin3"
+      }
+    }
+  }
+}
