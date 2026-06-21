@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "offshore",
+  "description": "Offshore — a local abliterated-model MCP server for prompts Claude refuses.",
+  "owner": {
+    "name": "Diab Neiroukh",
+    "url": "https://github.com/lzlrd"
+  },
+  "plugins": [
+    {
+      "name": "offshore",
+      "source": "./",
+      "description": "Bundles the offshore MCP server. Forwards refused prompts to a local abliterated model (Ollama, LM Studio, vLLM, or any OpenAI-compatible endpoint) and returns the unrestricted reply.",
+      "category": "productivity"
+    }
+  ]
+}

@@ -31,9 +31,20 @@ bun install && bun run build
 
 With no config file, offshore defaults to the `ollama` provider and the `dolphin3` model.
 
+## Install as a Claude Code Plugin
+
+The easiest path — no build step. Claude Code runs the server straight from source with [Bun](https://bun.sh) (required on your `PATH`); Bun fetches the dependencies on first launch.
+
+```
+/plugin marketplace add lzlrd/offshore
+/plugin install offshore@offshore
+```
+
+The plugin honours your `~/.offshore/config.toml` exactly like a manual run; with no config it defaults to the `ollama` provider and the `dolphin3` model. See [Configuration](#configuration).
+
 ## Claude Code Integration
 
-Add `offshore` to your global MCP servers:
+To wire it up manually from a source build instead of the plugin, add `offshore` to your global MCP servers:
 
 ```bash
 claude mcp add offshore bun /absolute/path/to/offshore/dist/index.js
